@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd" xmlns:context="http://www.springframework.org/schema/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+<bean class="com.cg.eis.exam3.SBU" id="sbu">
+<property value="500" name="sbuCode"/>
+<property value="JavaDellboomi" name="sbuName"/>
+<property value="Tanmaya" name="sbuHead"/>
+<property name="emplist">
+<list>
+<bean class="com.abc.labs.ex3.Employee">
+<property value="501" name="employeeId"/>
+<property value="srinu" name="employeeName"/>
+<property value="70000" name="salary"/>
+</bean>
+<bean class="com.abc.labs.ex3.Employee">
+<property value="502" name="employeeId"/>
+<property value="pavan" name="employeeName"/>
+<property value="55000" name="salary"/>
+</bean>
+</list>
+</property>
+</bean>
+</beans>
